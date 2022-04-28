@@ -1,0 +1,36 @@
+.content{
+    width: 800;
+    float: left;
+
+}
+
+.kutu {
+    /* Dış boşluk */
+    width: 16%;
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* Kenarlık */
+    border: 1px solid rgb(241, 197, 177); 
+    /* İç boşluk */
+    padding: 5%;
+    /* Genişlik */
+    background-color: #ffccff;
+    border-radius: 5%;
+
+}
+
+.kutuu {
+    width:auto;
+    border:solid 1px #000;
+    display:block;
+    margin-bottom:10px;
+    float: left;
+    margin-top: 5px;
+  }
+  .kutuu.fix {
+    word-wrap:break-word;
+    border-radius: 2%;
+  }
