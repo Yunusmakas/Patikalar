@@ -1,16 +1,18 @@
 a {text-decoration:underline;
 }
 
-.container {
+h4,h2,h1 {
     font-family:Poppins;
     color: #FFFFFF;     
 }
+
 /* Ana çerçeve */
 .container .box:nth-child(1){
     width: 1600px;
     height: 1200px;
     background-color: #2E3769;
 }
+
 /* 2. Çerçevenin gölgesi  */
 .container .box:nth-child(2){
     width: 908px;
@@ -21,6 +23,7 @@ a {text-decoration:underline;
     border-radius: 16px;
     position: absolute;   
 }
+
 /* 2. Çerçeve */
 .container .box:nth-child(3){
     width: 962px;
@@ -31,100 +34,63 @@ a {text-decoration:underline;
     border-radius: 16px;
     position: absolute;   
 }
+
 /* En alttaki yazı */
-.container .box:nth-child(4){
+h2{
     top:688px;
     left: 375px;
-    width: 679px ;
+    width: 679px;
     height: 48px;
-    background-color: #47518B;
     position: absolute;      
     font-size: 16px;
-     /*metni box ın içine istediğim gibi yerleştiremeyince flex kullandım   */
-    display: flex;
-    align-items: center; 
-    justify-content: center;        
 }
+
 /* Learn ile başlayan yazı */
-.container .box:nth-child(5){
+h1{
     top:484px;
     left: 375px;
     width: 627px ;
     height: 72px;
-    background-color: #47518B;
-    position: absolute;  
+    position: absolute;
     line-height: 36px;    
     font-size: 24px;
-    font-weight: bold;  
-    /*metni box ın içine istediğim gibi yerleştiremeyince flex kullandım   */
-    display: flex;
-    align-items: center; 
-    justify-content: center;      
-} 
+    font-weight: bold;   
+}
+ 
 /* How to */
-.container .box:nth-child(6){
-    top:433px;
+h4 {
+    top:405px;
     left: 375px;
-    width: 74px ;
-    height: 27px;
-    background-color: #47518B;
     position: absolute;  
     line-height: 27px;    
     font-size: 18px;
     font-weight: bold;
-    /*metni box ın içine istediğim gibi yerleştiremeyince flex kullandım   */
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
 } 
-/* email çerçevesi */
-.container .box:nth-child(7){
+/* email */
+input{
     top:580px;
     left: 375px;
-    width: 512px ;
+    width: 480px ;
     height: 84px;
     border-radius: 4px;
     background-color: #47518B;
     border: 4px solid #747DB0;
-    position: absolute;  
-    
-} 
-/* email yazısı */
-.container .box:nth-child(8){
-    /* Borderdan dolayı 4px daha top a ekledim */
-    top:608px;
-    left: 407px;
-    width: 298px ;
-    height: 36px;
-    background-color: #47518B;
-    position: absolute;
-    /* Bu ikiside çalışmadı. 
-    font-weight: regular;
-    font-style: regular; 
-    Gerek var mı onuda bilmiyorum. Diğer box larda kileride sildim. Bunlarıda açıklamaya aldım  */
+    position: absolute; 
     line-height: 36px;    
     font-size: 24px;
-    /*metni box ın içine istediğim gibi yerleştiremeyince flex kullandım   */
-    display: flex;
-    align-items: center;     
+    font-family: poppins; 
+    padding-left: 32px;
 } 
+
 /* Sign me up!*/
-.container .box:nth-child(9){
+button{
     top:580px;
     left: 903px;
-    width: 207px ;
-    /* Email çeçevesinde 4+4 border olduğundan dolayı 8px lik kot farkı oldu. Eşitlemek için 84 olan height i 92 yaptım */
     height: 92px;
-    background-color: #9D50FF;
+    width: 207px ;
     position: absolute;  
+    background-color: #9D50FF;
     border-radius: 4px;
-    /* email'in yazısını ayrı bir box ta yazmıştım. Burada direkt içine yazdım */
     line-height: 36px;    
     font-size: 24px;
-    /*metni box ın içine istediğim gibi yerleştiremeyince flex kullandım   */
-    display: flex;
-    align-items: center; 
-    justify-content: center;      
 }
-
-/* Blend Pass through ne olduğunu bilemediğim için onunla alakalı birşey apmadım. */
